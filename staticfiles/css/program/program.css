@@ -974,8 +974,8 @@ audio, canvas, progress, video {
 
 .image{
     padding: auto;
-    width: inherit;
-    height: inherit;
+    width: 90%;
+    height: 90%;
 }
 
 
