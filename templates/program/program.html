@@ -73,7 +73,7 @@
                                 <div class="play">
                                     <div class="play-control">
                                     </div>
-                                    <img src="헬스이미지 1">
+                                    <img src="../../staticfiles/images/program-img.png" style="width: 100%;">
                                 </div>
                             </span>
 
@@ -94,46 +94,48 @@
                     <div class="date-tab-wrap">
                         <ul>
                             <!-- 선택된것은 active가 붙음 -->
-                            <li class="date-tab " data-target="tab_2024-06-24">
-                                <div class="day">MON</div>
+                            <li class="date-tab active" >
+                                <div class="day" data-week="MON">MON</div>
 
                             </li>
-                            <li class="date-tab " data-target="tab_2024-06-25">
-                                <div class="day">TUE</div>
+                            <li class="date-tab " >
+                                <div class="day" data-week="TUE">TUE</div>
 
                             </li>
-                            <li class="date-tab " data-target="tab_2024-06-26">
-                                <div class="day">WED</div>
+                            <li class="date-tab " >
+                                <div class="day" data-week="WED">WED</div>
 
                             </li>
-                            <li class="date-tab " data-target="tab_2024-06-27">
-                                <div class="day">THU</div>
+                            <li class="date-tab " >
+                                <div class="day" data-week="THU">THU</div>
 
                             </li>
-                            <li class="date-tab active" data-target="tab_2024-06-28">
-                                <div class="day">FRI</div>
+                            <li class="date-tab" >
+                                <div class="day" data-week="FRI">FRI</div>
 
                             </li>
                         </ul>
                     </div>
 
-
                     <!-- 운동프로그램 -->
+
+
                     <!-- 월요일 -->
                     <!-- 선택된것은 active 클래스가 붙음 -->
-                    <div class="exe-info-wrap active">
+                    <!-- 아닌것은 unactive되서 안보임 -->
+                    <div class="exe-info-wrap active" data-week="MON">
                         <div class="info-wrap video">
                             <div class="video-top">
                                 <div class="logo">
                                     <!-- 사이트 로고 이미지 -->
-                                    <img src="사이트로고" style="width: 100%;max-width: 182px;">
+                                    <img src="../../staticfiles/images/MuscleMatrixLogo.png" style="width: 100%;max-width: 182px;">
                                 </div>
                             </div>
 
                             <div class="video-content tac" style="height: 360px;">
                                 <!-- 프로그램 이미지 -->
                                 <img class="image"
-                                    src="https://www.bodychannel.co.kr/dist/img/ptshop/pts_body_logo_white.png">
+                                    src="../../staticfiles/images/blank-image.png">
                             </div>
                         </div>
                         <div class="info-wrap desc">
@@ -148,59 +150,59 @@
                                 <div class="bot-list">
                                     <div class="list-box">
                                         <!-- 선택한것에 active클래스가 붙음 -->
-                                        <div class="select" data-num="1">
-
+                                        <div class="select active" data-num="1">
+                                            01 토 터치
                                             <div class="select-desc">
-
+                                                스텝박스를 이용하는 전신 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="2">
-
+                                            02 하이 점프
                                             <div class="select-desc">
-
+                                                스텝박스를 이용한 하체 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="3">
-
+                                            03 원 암 스윙
                                             <div class="select-desc">
-
+                                                한 손으로 하는 케틀벨 스윙 동작
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="4">
-
+                                            04 원 암 스윙2
                                             <div class="select-desc">
-
+                                                한 손으로 하는 케틀벨 스윙 동작
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="5">
-
+                                            05 트라이셉스 익스텐션
                                             <div class="select-desc">
-
+                                                케틀벨을 이용한 상완 삼두근 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="6">
-
+                                            06 크로스 크런치
                                             <div class="select-desc">
-
+                                                누워서하는 복근 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="7">
-
+                                            07 푸쉬 업
                                             <div class="select-desc">
-
+                                                엎드린 상태에서하는 가슴운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="8">
-
+                                            08 점핑 잭
                                             <div class="select-desc">
-
+                                                팔벌려 높이뛰기
                                             </div>
                                         </div>
                                     </div>
@@ -210,27 +212,27 @@
                     </div>
 
                     <!-- 화요일 -->
-                    <div class="exe-info-wrap  active">
+                    <div class="exe-info-wrap unactive" data-week="TUE">
                         <div class="info-wrap video">
                             <div class="video-top">
                                 <div class="logo">
                                     <!-- 사이트 로고 이미지 -->
-                                    <img src="사이트로고" style="width: 100%;max-width: 182px;">
+                                    <img src="../../staticfiles/images/MuscleMatrixLogo.png" style="width: 100%;max-width: 182px;">
                                 </div>
                             </div>
 
                             <div class="video-content tac" style="height: 360px;">
                                 <!-- 프로그램 이미지 -->
                                 <img class="image"
-                                    src="https://www.bodychannel.co.kr/dist/img/ptshop/pts_body_logo_white.png">
+                                    src="../../staticfiles/images/blank-image.png">
                             </div>
                         </div>
                         <div class="info-wrap desc">
                             <div class="info-desc-box">
-                                <div>운동효과: </div>
-                                <div>운동부위: </div>
-                                <div>목표 칼로리: kcal</div>
-                                <div>운동명: </div>
+                                <div>운동효과: 전신</div>
+                                <div>운동부위: 전신</div>
+                                <div>목표 칼로리: 500 kcal</div>
+                                <div>운동명: 고강도의 유산소 운동 GO!!</div>
                             </div>
                             <div class="info-video-list ">
                                 <div class="top-tit">운동프로그램</div>
@@ -238,58 +240,58 @@
                                     <div class="list-box">
                                         <!-- 선택한것에 active클래스가 붙음 -->
                                         <div class="select" data-num="1">
-
+                                            01 토 터치
                                             <div class="select-desc">
-
+                                                스텝박스를 이용하는 전신 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="2">
-
+                                            02 사이드 점프
                                             <div class="select-desc">
-
+                                                스텝박스를 이용하는 전신 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="3">
-
+                                            03 버피 점프
                                             <div class="select-desc">
-
+                                                스텝박스를 이용한 전신 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="4">
-
+                                            04 마운틴 클라이밍
                                             <div class="select-desc">
-
+                                                스텝박스를 이용하는 전신 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="5">
-
+                                            05 스쿼트 점프
                                             <div class="select-desc">
-
+                                                스텝박스를 이용하는 하체운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="6">
-
+                                            06 크로스 크런치
                                             <div class="select-desc">
-
+                                                누워서하는 복근 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="7">
-
+                                            07 슈퍼맨
                                             <div class="select-desc">
-
+                                                엎드린 상태에서 양팔 다리를 동시에 올리는 전신 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="8">
-
+                                            08 오버헤드 스윙
                                             <div class="select-desc">
-
+                                                머리위까지 올리는 케틀벨 스윙
                                             </div>
                                         </div>
                                     </div>
@@ -299,27 +301,27 @@
                     </div>
 
                     <!-- 수요일 -->
-                    <div class="exe-info-wrap  active">
+                    <div class="exe-info-wrap unactive" data-week="WED">
                         <div class="info-wrap video">
                             <div class="video-top">
                                 <div class="logo">
                                     <!-- 사이트 로고 이미지 -->
-                                    <img src="사이트로고" style="width: 100%;max-width: 182px;">
+                                    <img src="../../staticfiles/images/MuscleMatrixLogo.png" style="width: 100%;max-width: 182px;">
                                 </div>
                             </div>
 
                             <div class="video-content tac" style="height: 360px;">
                                 <!-- 프로그램 이미지 -->
                                 <img class="image"
-                                    src="https://www.bodychannel.co.kr/dist/img/ptshop/pts_body_logo_white.png">
+                                    src="../../staticfiles/images/blank-image.png">
                             </div>
                         </div>
                         <div class="info-wrap desc">
                             <div class="info-desc-box">
-                                <div>운동효과: </div>
-                                <div>운동부위: </div>
-                                <div>목표 칼로리: kcal</div>
-                                <div>운동명: </div>
+                                <div>운동효과: 전신</div>
+                                <div>운동부위: 전신</div>
+                                <div>목표 칼로리: 500 kcal</div>
+                                <div>운동명: 근성장^^</div>
                             </div>
                             <div class="info-video-list ">
                                 <div class="top-tit">운동프로그램</div>
@@ -327,58 +329,58 @@
                                     <div class="list-box">
                                         <!-- 선택한것에 active클래스가 붙음 -->
                                         <div class="select" data-num="1">
-
+                                            01 셔플
                                             <div class="select-desc">
-
+                                                다리를 앞뒤로 교차시키면서하는 제자리 뛰기
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="2">
-
+                                            02 스쿼트 프레스
                                             <div class="select-desc">
-
+                                                스쿼트와 프레스를 동시에 하는 전신 운동   
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="3">
-
+                                            03 런지&amp;트위스트 
                                             <div class="select-desc">
-
+                                                케틀벨을 이용한 전신 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="4">
-
+                                            04 트라이셉스 익스텐션
                                             <div class="select-desc">
-
+                                                케틀벨을 이용한 상완 삼두근 운동 
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="5">
-
+                                            05 로우
                                             <div class="select-desc">
-
+                                                덤벨을 이용한 등 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="6">
-
+                                            06 헤머 컬
                                             <div class="select-desc">
-
+                                                양팔 동시에 진행하는 상완 이두근 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="7">
-
+                                            07 얼티네이트 숄더 프레스
                                             <div class="select-desc">
-
+                                                덤벨을 이용한 삼각근 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="8">
-
+                                            08 크런치
                                             <div class="select-desc">
-
+                                                덤벨을 들고하는 복근운동
                                             </div>
                                         </div>
                                     </div>
@@ -389,27 +391,27 @@
 
 
                     <!-- 목요일 -->
-                    <div class="exe-info-wrap  active">
+                    <div class="exe-info-wrap unactive" data-week="THU">
                         <div class="info-wrap video">
                             <div class="video-top">
                                 <div class="logo">
                                     <!-- 사이트 로고 이미지 -->
-                                    <img src="사이트로고" style="width: 100%;max-width: 182px;">
+                                    <img src="../../staticfiles/images/MuscleMatrixLogo.png" style="width: 100%;max-width: 182px;">
                                 </div>
                             </div>
 
                             <div class="video-content tac" style="height: 360px;">
                                 <!-- 프로그램 이미지 -->
                                 <img class="image"
-                                    src="https://www.bodychannel.co.kr/dist/img/ptshop/pts_body_logo_white.png">
+                                    src="../../staticfiles/images/blank-image.png">
                             </div>
                         </div>
                         <div class="info-wrap desc">
                             <div class="info-desc-box">
-                                <div>운동효과: </div>
-                                <div>운동부위: </div>
-                                <div>목표 칼로리: kcal</div>
-                                <div>운동명: </div>
+                                <div>운동효과: 지방 폭발</div>
+                                <div>운동부위: 전신</div>
+                                <div>목표 칼로리: 500 kcal</div>
+                                <div>운동명: 오늘은 어떤 루틴으로??</div>
                             </div>
                             <div class="info-video-list ">
                                 <div class="top-tit">운동프로그램</div>
@@ -417,58 +419,58 @@
                                     <div class="list-box">
                                         <!-- 선택한것에 active클래스가 붙음 -->
                                         <div class="select" data-num="1">
-
+                                            01 스쿼트 프레스
                                             <div class="select-desc">
-
+                                                스쿼트와 프레스를 동시에 하는 전신 운동 
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="2">
-
+                                            02 스텝 점프 푸쉬 업 
                                             <div class="select-desc">
-
+                                                점프 후 푸쉬 업 까지 이어지는 전신 운동        
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="3">
-
+                                            03 스쿼트 점프
                                             <div class="select-desc">
-
+                                                스텝박스를 이용하는 하체운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="4">
-
+                                            04 플랭크
                                             <div class="select-desc">
-
+                                                팔꿈치와 발끝을 바닥에댄후 버티는 코어운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="5">
-
+                                            05 암 컬 
                                             <div class="select-desc">
-
+                                                양팔동시에 하는 상완이두근 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="6">
-
+                                            06 투 암 킥 백
                                             <div class="select-desc">
-
+                                                양팔 동시에 하는 상완 삼두근 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="7">
-
+                                            07 숄더 프레스
                                             <div class="select-desc">
-
+                                                덤벨을 이용한 삼각근 운동
                                             </div>
                                         </div>
 
                                         <div class="select" data-num="8">
-
+                                            08 시쏘 킥
                                             <div class="select-desc">
-
+                                                다리를 교차시키면서 하는 코어운동
                                             </div>
                                         </div>
                                     </div>
@@ -479,18 +481,19 @@
 
 
                     <!-- 금요일 -->
-                    <div class="exe-info-wrap  active">
+                    <div class="exe-info-wrap unactive" data-week="FRI">
                         <div class="info-wrap video">
                             <div class="video-top">
                                 <div class="logo">
                                     <!-- 사이트 로고 이미지 -->
-                                    <img src="사이트로고" style="width: 100%;max-width: 182px;">
+                                    <img src="../../staticfiles/images/MuscleMatrixLogo.png" style="width: 100%;max-width: 182px;">
                                 </div>
                             </div>
 
                             <div class="video-content tac" style="height: 360px;">
                                 <!-- 프로그램 이미지 -->
-                                <img src="https://www.bodychannel.co.kr/dist/img/ptshop/pts_body_logo_white.png">
+                                <img class="image"
+                                    src="../../staticfiles/images/blank-image.png">
 
                             </div>
                         </div>
@@ -508,7 +511,7 @@
                                     <!-- 운동 영상 리스트 -->
                                     <div class="list-box">
                                         <!-- 선택한것이 active클래스가 붙음 -->
-                                        <div class="select active" data-num="1">
+                                        <div class="select" data-num="1">
                                             01 데드리프트
                                             <div class="select-desc">
                                                 케틀벨을 이용한 데드리프트 </div>
@@ -576,5 +579,5 @@
 
 
 </body>
-
+<script src="../../staticfiles/js/program/program.js"></script>
 </html>

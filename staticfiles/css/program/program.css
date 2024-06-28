@@ -895,6 +895,7 @@ audio, canvas, progress, video {
     align-items: center; /* 수직 가운데 정렬 */
     height: 360px; /* 기존 높이 유지 */
     padding: 1rem 0;
+    padding-top: 60px; 
 }
 
 .pro-app-wrap > .exe-info-wrap > .info-wrap.desc {
@@ -967,9 +968,15 @@ audio, canvas, progress, video {
     border-radius: 0.2rem;
 }
 
+.exe-info-wrap.unactive{
+    display: none;
+}
 
-
-
+.image{
+    padding: auto;
+    width: inherit;
+    height: inherit;
+}
 
 
 
