@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 // 검색창 눌렀을때 검색바에 아웃라인주기
 const searchBar = document.querySelector("label.search-bar");
 
@@ -111,14 +109,14 @@ checkboxes.forEach(function (checkbox) {
 
 // 강사등록버튼
 const addBtn = document.querySelector(".addBtn");
-const addModal = document.querySelector(".musclematrix-layer");
-const closeBtn = document.querySelector(".btn-close")
+const addModal = document.querySelector(".musclematrix-layer.teacher");
+const closeTeacherBtn = document.querySelector(".btn-close.teacher")
 
 addBtn.addEventListener('click', function () {
   addModal.style.display = "block"
 });
 
-closeBtn.addEventListener("click", function () {
+closeTeacherBtn.addEventListener("click", function () {
   addModal.style.display = "none"
 })
 
@@ -144,10 +142,56 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+//강사 수정 버튼
+const editBtn = document.querySelector(".editBtn");
+editBtn.addEventListener('click', function () {
+  addModal.style.display = "block"
+});
+
+
+
+// 기구등록
+const addMachineBtn = document.querySelector(".addMachineBtn");
+const addMachineModal = document.querySelector(".musclematrix-layer.machine");
+const closeMacineBtn = document.querySelector(".btn-close.machine")
+
+addMachineBtn.addEventListener('click', function () {
+  addMachineModal.style.display = "block"
+});
+
+closeMacineBtn.addEventListener("click", function () {
+  addMachineModal.style.display = "none"
+})
+
+// 강사 이미지 첨부란
+document.addEventListener('DOMContentLoaded', function () {
+  const machinePic = document.querySelector('.machine-pic');
+  const machineImageInput = document.getElementById('machineImageInput');
+  const machineImage = document.getElementById('machineImage');
+
+  machinePic.addEventListener('click', function () {
+    machineImageInput.click();
+  });
+
+  machineImageInput.addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        machineImage.src = e.target.result;
+      }
+      reader.readAsDataURL(file);
+    }
+  });
+});
+
+
+
+
 
 //  약력, 진행프로그램추가 태그 동적생성란
 document.addEventListener('DOMContentLoaded', function() {
-  const teacherForm = document.getElementById('teacherForm');
+  const teacherForm = document.getElementById('.teacherForm');
   const addBackgroundBtn = document.getElementById('addBackgroundBtn');
   const addProgramBtn = document.getElementById('addProgramBtn');
   const teacherBackgroundList = document.getElementById('teacherBackgroundList');
@@ -200,22 +244,24 @@ document.addEventListener('DOMContentLoaded', function() {
   addProgramBtn.addEventListener('click', function() {
     addDynamicInput(teacherProgramList, 'teacher-program');
   });
-
-  // 폼 제출 방지
-  teacherForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    // 여기에 폼 데이터 처리 로직 추가
-    console.log('폼 제출됨');
-  });
 });
 
 
 
-//엔터누르면 폼이 전송되는것을 방지
-const teacherForm = document.querySelector('teacherForm');
-teacherForm.addEventListener('keypress', function (e) {
-  if (e.key === 'Enter') {
-    e.preventDefault(); // 엔터 키의 기본 동작을 막습니다.
-  }
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
