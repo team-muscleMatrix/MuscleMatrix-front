@@ -486,19 +486,6 @@ a {
     font-weight: 500;
 }
 
-.teacher_intro {
-    margin-top: 35px;
-    font-size: 1.5rem;
-    line-height: 1rem;
-}
-
-.teacher_intro.this{
-    margin: 0 0 1.5em;
-    padding: 10px;
-    line-height: inherit;
-}
-
-
 .marginBoth30 {
     margin: 30px 0;
 }
@@ -632,6 +619,17 @@ a {
 
 
 
+.teacher_intro {
+    margin-top: 35px;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+.teacher_intro.this{
+    margin: 0 0 1.5em;
+    padding: 10px;
+    /* line-height: inherit; */
+}
 
 
 
@@ -639,6 +637,52 @@ a {
 
 
 
+.teacher_intro.this {
+    margin: 0 0 1.5em;
+    padding: 10px;
+    line-height: 1.5;
+    max-height: 160px; /* 대략 5줄의 높이, 필요에 따라 조정 */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.teacher_intro.this li {
+    margin-bottom: 5px;
+}
+
+.teacher_intro.this::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.col-lg-4.text-center {
+    float: left;
+    width: 33.33333333%;
+}
+
+.teacher_intro.this {
+    margin: 0 0 1.5em;
+    padding: 10px;
+    line-height: 1.5;
+    max-height: 150px; /* 약 5줄의 높이, 필요에 따라 조정 */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.teacher_intro.this li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+    max-width: 100%; /* 부모 요소의 너비를 초과하지 않도록 설정 */
+    box-sizing: border-box; /* padding을 너비에 포함 */
+    padding-right: 10px; /* 오른쪽에 약간의 여백 추가 */
+}
+
+.teacher_intro.this::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
 
 
 
