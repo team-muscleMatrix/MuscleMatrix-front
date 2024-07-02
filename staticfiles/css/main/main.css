@@ -216,7 +216,7 @@ figure {
     height: 100%;
 }
 
-.aboutus-figure-div {
+.firstap{
     width: 100%;
     height: 100%;
     padding: 1rem;
@@ -227,6 +227,45 @@ figure {
     text-align: center;
     min-height: 400px;
     background-image: url(https://www.bodychannel.co.kr/dist/img/main/body_bg_img_5.jpg);
+}
+
+.secondtap{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    min-height: 300px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 400px;
+    background-image: url(https://www.bodychannel.co.kr/dist/img/main/body_bg_img_6.jpg);
+}
+
+.thirdtap{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    min-height: 300px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 400px;
+    background-image: url(https://www.bodychannel.co.kr/dist/img/main/body_bg_img_7.jpg);
+}
+
+.ftap{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    min-height: 300px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 400px;
+    background-image: url(https://www.bodychannel.co.kr/dist/img/main/body_bg_img_8.jpg);
 }
 
 .aboutus-figure-icondiv img {
@@ -268,13 +307,11 @@ figure {
 }
 
 .back-div {
-    border-radius: 10px; /* 둥근 모서리 (원하지 않으면 제거) */
     background-color: #ffffff; /* 배경색 */
-    padding: 200px; /* 내부 여백 */
-    width: 200px; /* 너비 설정 */
-    height: auto;
-    margin: 20px auto; /* 가운데 정렬 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+    padding:80px; /* 내부 여백 */
+    width: 346px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 그림자 효과 */
 }
 
 .back-divdiv {
@@ -323,4 +360,194 @@ figure {
     display: none !important;
     min-height: 1px;
     margin-bottom: 40px !important;
+}
+
+
+.MuscleMatrix-summary-wrap {
+    position: relative;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* background-position: 0 0; */
+    background-repeat: repeat-y;
+    overflow: hidden;
+}
+
+.MuscleMatrix-summary-wrap {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/gym.jpg);
+    background-position: center;
+}
+
+.overlaybg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.countto-container .parallax-content {
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.letter-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 750px;
+    height: 400px;
+}
+
+.logo {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 100px;
+}
+
+.real-letter-wrap {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.real-letter-wrapdiv {
+    color: #fff;
+    text-align: center;
+}
+
+.real-letter-wrapdiv {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+}
+
+.count {
+    font-size: 3em; 
+    font-family: 'open_sansregular', sans-serif;
+}
+
+.countname {
+    font-size: 1.3em;
+    margin: 25px 0 0;
+    font-weight: 200;
+    font-family: 'latobold', sans-serif;
+    position: relative;
+}
+
+.yellow-bar {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: relative;
+    bottom: 4px;
+    /* top: -16px; */
+    left: 50%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: -15px;
+    background: #f0cf18;
+}
+
+.MuscleMatrix-health-wrap {
+    margin-top: 100px;
+}
+
+.MuscleMatrix-health-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 750px;
+}
+
+.MuscleMatrix-health-containerDiv {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 100px;
+}
+
+.MuscleMatrix-title-letter {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.MuscleMatrix-subtitle-letter {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.MuscleMatrix-first-icons {
+    padding: 0 !important;
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+    display: flex;
+}
+
+.left-icon {
+    display: inline-block;
+    width: 47%;
+    margin-right: 14px;
+}
+
+.left-icon > img {
+    width: 100%;
+}
+
+.MuscleMatrix-service-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 586px;
+    margin-left: auto;
+    width: 750px;
+}
+
+.MuscleMatrix-service-containerDiv {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.MuscleMatrix-service-fD {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.MuscleMatrix-service-sD{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%
+}
+
+.MuscleMatrix-service-sDfD {
+    font-weight: 700 !important;
+    color: #fff !important;
+    font-size: 28px !important;
+}
+
+.MuscleMatrix-service-tD{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+}
+
+.MuscleMatrix-service-tDd {
+    display: flex;
+    vertical-align: middle;
+    height: 100%;
 }
