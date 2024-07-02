@@ -1453,15 +1453,13 @@ div.teacher-name {
     position: relative;
     padding: 2px 22px;
     border: 1px solid #eee;
-    margin: -5px 0 50px;
+    margin: -5px 0 30px;
     background: #fff;
     height: 10%;
-    /* max-height: 30px; */
 }
 
 textarea.tn-textarea {
     width: 100%;
-    /* min-height: 42px; */
     border: 0 none;
     resize: none;
     outline-style: none;
@@ -1688,8 +1686,6 @@ ul.content-name-detail {
     padding: 0 5px;
 }
 
-
-
 .addBtn {
     border-width: 1px;
     border-radius: 9999px;
@@ -1699,4 +1695,28 @@ ul.content-name-detail {
     height: 40px;
     display: flex;
     border-color: #e6e6e7;
+}
+
+.editBtn {
+    border-width: 1px;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-color: #e6e6e7;
+}
+
+
+
+
+
+div.teacher-link {
+    position: relative;
+    padding: 2px 22px;
+    border: 1px solid #eee;
+    margin: -5px 0 30px;
+    background: #fff;
+    height: 10%;
 }

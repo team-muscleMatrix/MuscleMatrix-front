@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 // 검색창 눌렀을때 검색바에 아웃라인주기
 const searchBar = document.querySelector("label.search-bar");
 
@@ -144,6 +142,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+//강사 수정 버튼
+const editBtn = document.querySelector(".editBtn");
+editBtn.addEventListener('click', function () {
+  addModal.style.display = "block"
+});
+
+
 
 //  약력, 진행프로그램추가 태그 동적생성란
 document.addEventListener('DOMContentLoaded', function() {
@@ -209,8 +214,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-
 //엔터누르면 폼이 전송되는것을 방지
 const teacherForm = document.querySelector('teacherForm');
 teacherForm.addEventListener('keypress', function (e) {
@@ -218,4 +221,21 @@ teacherForm.addEventListener('keypress', function (e) {
     e.preventDefault(); // 엔터 키의 기본 동작을 막습니다.
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
