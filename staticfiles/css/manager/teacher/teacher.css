@@ -1687,3 +1687,16 @@ ul.content-name-detail {
     margin-left: 5px;
     padding: 0 5px;
 }
+
+
+
+.addBtn {
+    border-width: 1px;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-color: #e6e6e7;
+}
