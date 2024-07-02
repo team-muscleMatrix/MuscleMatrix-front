@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding: 0;
 }
 
-.row::after, .row::before, .aboutus-content-wrap::after, .aboutus-content-wrap::before, .aboutus-header::after, .aboutus-header::before, .letter-wrap-ul:after, .letter-wrap-ul:before, .letter-wrap:after, .letter-wrap::before, .logo-wrap:after, .logo-wrap:before, .header-container:after, .header-container:before, .header-wrap-nav:after, .header-wrap-nav:before {
+.join-content-div::after, .join-content-div::before, .join-title-row::after, .join-title-row::before, .join-title-container::after, .join-title-container::before, .footer-container-div::after, .footer-container-div::before, .MuscleMatrix-service-fD::after, .MuscleMatrix-service-fD::before, .MuscleMatrix-service-containerDiv::after, .MuscleMatrix-service-containerDiv::before, .MuscleMatrix-service-container::after, .MuscleMatrix-service-container::before, .MuscleMatrix-health-containerDiv::after, .MuscleMatrix-health-containerDiv::before, .MuscleMatrix-health-container::after, .MuscleMatrix-health-container::before, .real-letter-wrap::after, .real-letter-wrap::before, .logo::after, .logo::before, .letter-container::after, .letter-container::before, .row::after, .row::before, .aboutus-content-wrap::after, .aboutus-content-wrap::before, .aboutus-header::after, .aboutus-header::before, .letter-wrap-ul:after, .letter-wrap-ul:before, .letter-wrap:after, .letter-wrap::before, .logo-wrap:after, .logo-wrap:before, .header-container:after, .header-container:before, .header-wrap-nav:after, .header-wrap-nav:before {
     display: table;
     content: " ";
     clear: both;
