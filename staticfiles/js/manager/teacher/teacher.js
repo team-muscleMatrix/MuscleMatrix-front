@@ -152,7 +152,7 @@ editBtn.addEventListener('click', function () {
 
 //  약력, 진행프로그램추가 태그 동적생성란
 document.addEventListener('DOMContentLoaded', function() {
-  const teacherForm = document.getElementById('teacherForm');
+  const teacherForm = document.getElementById('.teacherForm');
   const addBackgroundBtn = document.getElementById('addBackgroundBtn');
   const addProgramBtn = document.getElementById('addProgramBtn');
   const teacherBackgroundList = document.getElementById('teacherBackgroundList');
@@ -205,22 +205,9 @@ document.addEventListener('DOMContentLoaded', function() {
   addProgramBtn.addEventListener('click', function() {
     addDynamicInput(teacherProgramList, 'teacher-program');
   });
-
-  // 폼 제출 방지
-  teacherForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    // 여기에 폼 데이터 처리 로직 추가
-    console.log('폼 제출됨');
-  });
 });
 
-//엔터누르면 폼이 전송되는것을 방지
-const teacherForm = document.querySelector('teacherForm');
-teacherForm.addEventListener('keypress', function (e) {
-  if (e.key === 'Enter') {
-    e.preventDefault(); // 엔터 키의 기본 동작을 막습니다.
-  }
-});
+
 
 
 
