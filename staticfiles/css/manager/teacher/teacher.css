@@ -1483,17 +1483,6 @@ textarea.tn-textarea {
     border-radius: 50%;
 }
 
-.addBtn {
-    border-width: 1px;
-    border-radius: 9999px;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    border-color: #e6e6e7;
-}
-
 
 
 
@@ -1720,3 +1709,22 @@ div.teacher-link {
     background: #fff;
     height: 10%;
 }
+
+.addMachineBtn {
+    border-width: 1px;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-color: #e6e6e7;
+}
+
+
+
+
+
+
+
+

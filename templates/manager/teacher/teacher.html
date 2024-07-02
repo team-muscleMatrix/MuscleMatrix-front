@@ -28,7 +28,7 @@
   <link rel="shortcut icon" href="../../../staticfiles/images/MuscleMatrixLogo.png" type="image/x-icon" />
 
   <link rel="stylesheet" href="../../../staticfiles/css/manager/teacher/teacher.css" />
-  <title>강사 관리</title>
+  <title>통합 관리</title>
 </head>
 
 <body class="overflow-hidden">
@@ -54,9 +54,8 @@
               <div class="profile-inner">
                 <button aria-label="profile image" class="profile-icon" type="button"
                   style="width: 68px; height: 68px; outline: none">
-                  <img src="../../../staticfiles/images/파비콘" alt="프로필 이미지"
-                    sizes="(max-width: 240px) 100vw, 240px" decoding="async" data-nimg="fill" class="profile-img"
-                    loading="lazy" style="
+                  <img src="../../../staticfiles/images/파비콘" alt="프로필 이미지" sizes="(max-width: 240px) 100vw, 240px"
+                    decoding="async" data-nimg="fill" class="profile-img" loading="lazy" style="
                         position: absolute;
                         height: 100%;
                         width: 100%;
@@ -102,14 +101,6 @@
             </li>
 
 
-            <li class="function-wrap-2">
-              <a href="#" class="function-2">
-                <img src="">
-                <span class="function-2">기구 추가</span>
-              </a>
-            </li>
-
-
 
           </ul>
         </nav>
@@ -118,9 +109,16 @@
             <div class="content-inner">
               <div class="content-box">
                 <div class="header">
-                  <h1 class="header-name">강사 관리</h1>
+                  <h1 class="header-name">통합 관리</h1>
                   <div>
                     <div class="compose-button">
+                      <!-- 기구  버튼 -->
+                      <button class="button.add-button addMachineBtn">
+                        <img class="add-button" src="../../../staticfiles/images/write.png">
+                      </button>
+
+
+
                       <!-- 강사 등록 버튼 -->
                       <button class="button.add-button addBtn">
                         <img class="add-button" src="../../../staticfiles/images/write.png">
@@ -275,7 +273,8 @@
 
               <div class="teacher-pic">
                 <!-- 서버에서  teacherImageInput키로 업로드한 이미지를 받을 수 있음-->
-                <input type="file" name="teacherImageInput" id="teacherImageInput" accept="image/*" style="display: none;">
+                <input type="file" name="teacherImageInput" id="teacherImageInput" accept="image/*"
+                  style="display: none;">
                 <img id="teacherImage" src="../../../staticfiles/images/blank-image.png" alt="강사 이미지">
               </div>
 
@@ -296,13 +295,13 @@
                 <ul id="teacherBackgroundList"></ul>
                 <button type="button" id="addBackgroundBtn" class="add-btn">+</button>
               </div>
-    
+
               <div class="dynamic-input-container">
                 <h4>진행 프로그램</h4>
                 <ul id="teacherProgramList"></ul>
                 <button type="button" id="addProgramBtn" class="add-btn">+</button>
               </div>
-              
+
               <!-- <div class="box-txtarea">
                 <textarea class="tf_reason" name="teacher-intro" id="fillReason" placeholder="강사 약력을 적어주세요."></textarea>
               </div>
@@ -310,7 +309,7 @@
               <div class="box-txtarea">
                 <textarea class="tf_reason" name="teacher-program" id="fillReason" placeholder="강사가 진행하는 프로그램을 적어주세요."></textarea>
               </div> -->
-              
+
 
               <div class="wrap-btn">
                 <button type="reset" class="btn-close">취소</button>
