@@ -24,38 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// 글쓰기 버튼을 클릭하면 모달이 생성되고 다시 클릭하면 모달이 없어져야함
-// 대신 화면의 다른 부분을 클릭해도 모달이 없어져야함
-// const modalButton = document.querySelector("button.list-order");
-// const modal = document.querySelector(".list-order-function");
-// const modalUl = document.querySelector("ul.list-order-function");
-// const modalSvg = document.querySelector("svg.list-order");
-
-// document.addEventListener("click", (e) => {
-//   if (e.target.closest("button.list-order")) {
-//     modal.style.display = "block";
-//     modalSvg.style.transform = "rotate(180deg)";
-//     modalButton.classList.add("border-color");
-//   } else {
-//     if (e.target.classList.contains("list-order-function")) {
-//       modal.style.display = "block";
-//       return;
-//     }
-//     modal.style.display = "none";
-//     modalSvg.style.transform = "rotate(360deg)";
-//     modalButton.classList.remove("border-color");
-//   }
-// });
-
-// 순서 정렬 박스에서 선택한 값이 위에 선택하기
-// const modalBtns = modal.querySelectorAll("button.function-latest");
-// modalBtns.forEach((modalBtn) => {
-//   modalBtn.addEventListener("click", (e) => {
-//     const btn = e.target.closest("button");
-//     const order1 = document.querySelector(".order-1");
-//     order1.innerText = btn.innerText;
-//   });
-// });
 
 // 검색창 눌렀을때 검색바에 아웃라인주기
 const searchBar = document.querySelector("label.search-bar");
@@ -146,39 +114,108 @@ const addBtn = document.querySelector(".addBtn");
 const addModal = document.querySelector(".musclematrix-layer");
 const closeBtn = document.querySelector(".btn-close")
 
-addBtn.addEventListener('click', function() {
+addBtn.addEventListener('click', function () {
   addModal.style.display = "block"
 });
 
-closeBtn.addEventListener("click", function(){
+closeBtn.addEventListener("click", function () {
   addModal.style.display = "none"
 })
 
 // 강사 이미지 첨부란
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const teacherPic = document.querySelector('.teacher-pic');
   const teacherImageInput = document.getElementById('teacherImageInput');
   const teacherImage = document.getElementById('teacherImage');
 
-  teacherPic.addEventListener('click', function() {
-      teacherImageInput.click();
+  teacherPic.addEventListener('click', function () {
+    teacherImageInput.click();
   });
 
-  teacherImageInput.addEventListener('change', function(event) {
-      const file = event.target.files[0];
-      if (file) {
-          const reader = new FileReader();
-          reader.onload = function(e) {
-              teacherImage.src = e.target.result;
-          }
-          reader.readAsDataURL(file);
+  teacherImageInput.addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        teacherImage.src = e.target.result;
       }
+      reader.readAsDataURL(file);
+    }
+  });
+});
+
+
+//  약력, 진행프로그램추가 태그 동적생성란
+document.addEventListener('DOMContentLoaded', function() {
+  const teacherForm = document.getElementById('teacherForm');
+  const addBackgroundBtn = document.getElementById('addBackgroundBtn');
+  const addProgramBtn = document.getElementById('addProgramBtn');
+  const teacherBackgroundList = document.getElementById('teacherBackgroundList');
+  const teacherProgramList = document.getElementById('teacherProgramList');
+
+  // 동적 입력 필드 추가 함수
+  function addDynamicInput(listElement, inputName) {
+    const li = document.createElement('li');
+    const input = document.createElement('input');
+    const removeBtn = document.createElement('button');
+
+    input.type = 'text';
+    input.name = `${inputName}[]`;
+    input.required = true;
+    input.addEventListener('input', adjustInputWidth);
+    
+    // 엔터 키 이벤트 처리
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault(); // 엔터 키의 기본 동작을 막습니다.
+        addDynamicInput(listElement, inputName); // 대신 새로운 입력 필드를 추가합니다.
+      }
+    });
+
+    removeBtn.type = 'button';
+    removeBtn.className = 'remove-btn';
+    removeBtn.textContent = 'x';
+    removeBtn.addEventListener('click', function() {
+      listElement.removeChild(li);
+    });
+
+    li.appendChild(input);
+    li.appendChild(removeBtn);
+    listElement.appendChild(li);
+
+    input.focus();
+  }
+
+  // 입력 필드 너비 조정 함수
+  function adjustInputWidth() {
+    this.style.width = (this.value.length + 1) * 8 + 'px';
+  }
+
+  // 약력 추가 버튼
+  addBackgroundBtn.addEventListener('click', function() {
+    addDynamicInput(teacherBackgroundList, 'teacher-background');
+  });
+
+  // 프로그램 추가 버튼
+  addProgramBtn.addEventListener('click', function() {
+    addDynamicInput(teacherProgramList, 'teacher-program');
+  });
+
+  // 폼 제출 방지
+  teacherForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // 여기에 폼 데이터 처리 로직 추가
+    console.log('폼 제출됨');
   });
 });
 
 
 
-
-
-
+//엔터누르면 폼이 전송되는것을 방지
+const teacherForm = document.querySelector('teacherForm');
+teacherForm.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    e.preventDefault(); // 엔터 키의 기본 동작을 막습니다.
+  }
+});
 

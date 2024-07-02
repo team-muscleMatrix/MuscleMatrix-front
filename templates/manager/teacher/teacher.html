@@ -188,7 +188,12 @@
                           <div class="content-name">
                             <p class="content-name">강사 이름 1</p>
                           </div>
-                          <p class="content-name-detail">
+                          <ul class="content-name-detail">
+                            <li class="detail">약력 1</li>
+                            <li class="detail">약력 1</li>
+                            <li class="detail">약력 1</li>
+                          </ul>
+                          <!-- <p class="content-name-detail">
                             약력들<br>
                             피트니스 교육 Muscle Lab 설립 및 CEO<br>
                             피트니스 무인 출입 통제 시스템 개발<br>
@@ -196,59 +201,27 @@
                             심장박동 트래킹 웨어러블 시스템 개발<br>
                             서강대학교 최고경영자 과정 수료<br>
                             외 다수
-                          </p>
+                          </p> -->
                         </div>
                       </div>
                     </div>
                   </button>
-                  <div class="teacher-programs">
+                  <ul class="teacher-programs">
+                    <li class="program">진행프로그램 1</li>
+                    <li class="program">진행프로그램 2</li>
+                    <li class="program">진행프로그램 3</li>
+                  </ul>
+                  <!-- <div class="teacher-programs">
                     진행프로그램1, 프로그램2, 프로그램3 , 프로그램3 , 프로그램3 , 프로그램3 , 프로그램3 , 프로그램3 , 프로그램3
-                  </div>
+                  </div> -->
                   <div class="content-open-wrap"></div>
-                  <!-- <div class="content-detail">
-                      <div class="content-detail-a">
-                        <p class="content-detail-num">0</p>
-                      </div>
-                      <div class="content-detail-b">
-                        <p class="content-detail-num">2024.02.05</p>
-                      </div>
-                    </div> -->
+
                 </li>
 
 
               </ul>
-              <div class="page-count-wrap">
-                <ul class="page flex">
-                  <li>
-                    <button class="page-count" aria-label="page turning button" disabled type="button">
-                      <svg class="page-count" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M15.58 3.27c.504.405.563 1.115.13 1.587L9.168 12l6.543 7.143a1.076 1.076 0 0 1-.13 1.586 1.26 1.26 0 0 1-1.695-.122L6 12l7.885-8.607a1.26 1.26 0 0 1 1.695-.122Z">
-                        </path>
-                      </svg>
-                    </button>
-                  </li>
-                  <li class="page-count">
-                    <button class="page-count-num page-count-num-choice" aria-label="page number button" type="button">
-                      <span class="page-count-num">1</span>
-                    </button>
-                  </li>
-                  <li class="page-count">
-                    <button class="page-count-num" aria-label="page number button" type="button">
-                      <span class="page-count-num">2</span>
-                    </button>
-                  </li>
-                  <li class="page-count">
-                    <button class="page-count" aria-label="page turning button" disabled type="button">
-                      <svg class="page-count" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M8.42 20.73a1.076 1.076 0 0 1-.13-1.587L14.832 12 8.289 4.857a1.076 1.076 0 0 1 .13-1.586 1.26 1.26 0 0 1 1.696.122L18 12l-7.885 8.607a1.26 1.26 0 0 1-1.695.122Z">
-                        </path>
-                      </svg>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+
+
             </div>
           </div>
         </div>
@@ -278,7 +251,7 @@
 
     <div class="musclematrix-layer report-background" style="display: none;">
       <div class="inner-musclematrix-layer inner-musclematrix-layer4">
-        <form>
+        <form class="teacherForm">
           <input type="hidden" name="userId" value="">
           <input type="hidden" name="contentNo" value="">
 
@@ -300,15 +273,26 @@
                 <!-- <label for="fillReason" class="tf-reason">강사 이름을 적어주세요.</label> -->
                 <textarea class="tn-textarea" name="teacher-name" placeholder="강사 이름을 적어주세요."></textarea>
               </div>
-              <div class="box-txtarea">
-                <!-- <label for="fillReason" class="tf-reason">강사의 약력을 입력해주세요.</label> -->
+
+              <div class="dynamic-input-container">
+                <h4>강사 약력</h4>
+                <ul id="teacherBackgroundList"></ul>
+                <button type="button" id="addBackgroundBtn" class="add-btn">+</button>
+              </div>
+    
+              <div class="dynamic-input-container">
+                <h4>진행 프로그램</h4>
+                <ul id="teacherProgramList"></ul>
+                <button type="button" id="addProgramBtn" class="add-btn">+</button>
+              </div>
+              
+              <!-- <div class="box-txtarea">
                 <textarea class="tf_reason" name="teacher-intro" id="fillReason" placeholder="강사 약력을 적어주세요."></textarea>
               </div>
 
               <div class="box-txtarea">
-                <!-- <label for="fillReason" class="tf-reason">강사의 약력을 입력해주세요.</label> -->
                 <textarea class="tf_reason" name="teacher-program" id="fillReason" placeholder="강사가 진행하는 프로그램을 적어주세요."></textarea>
-              </div>
+              </div> -->
               
 
               <div class="wrap-btn">

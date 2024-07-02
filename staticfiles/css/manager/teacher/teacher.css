@@ -832,12 +832,13 @@ ul.list-content {
     display: flex;
     margin-top: 8px;
     grid-column: 1/-1;
+    width: 1040px;
 }
 
 li.list-content {
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 8px;
+    padding-left: 40px;
     padding-right: 8px;
     border-bottom-width: 1px;
     align-items: center;
@@ -873,7 +874,7 @@ div.list-content-inner {
 div.content-name {
     gap: 2px;
     display: flex;
-    width: 400px
+    width: 300px
 }
 
 p.content-name {
@@ -888,22 +889,6 @@ p.content-name {
     line-height: 50px;
 }
 
-p.content-name-detail {
-    overflow: hidden;
-    margin-top: 2px;
-    display: -webkit-box;
-    word-break: break-word;
-    word-wrap: break-word;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #8a8a8b;
-    fill: #8a8a8b;
-    height: 60px;
-    width: 400px;
-}
 
 div.content-open-wrap {
     align-items: flex-start;
@@ -1205,12 +1190,12 @@ li.list-content {
     color: black;
     padding: 10px;
     border-radius: 5px;
-    flex-basis: calc(50% - 5px);
+    /* flex-basis: calc(50% - 5px); */
     box-sizing: border-box;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 50px;
+    /* width: auto; */
     height: 40px;
 }
 
@@ -1225,13 +1210,13 @@ li.list-content {
     border-color: #e6e6e7;
 }
 
-.add-button{
-    width:20px;
+.add-button {
+    width: 20px;
     height: 20px;
 }
 
 .button.add-button {
-        border-width: 1px;
+    border-width: 1px;
     border-radius: 9999px;
     justify-content: center;
     align-items: center;
@@ -1245,7 +1230,7 @@ li.list-content {
 
 /* 신고하기폼 */
 .dimmed-layer {
-    filter: alpha(opacity = 95);
+    filter: alpha(opacity=95);
     height: 100%;
     opacity: .95;
     z-index: 9998;
@@ -1269,7 +1254,8 @@ li.list-content {
     z-index: 10000;
 }
 
-.musclematrix-layer, .dimmed-layer {
+.musclematrix-layer,
+.dimmed-layer {
     left: 0;
     position: fixed;
     top: 0;
@@ -1283,6 +1269,7 @@ li.list-content {
 .musclematrix-layer .report-background {
     background: #f8f8f8;
 }
+
 .inner-musclematrix-layer4 {
     background: #fff;
     border: 1px solid #ddd;
@@ -1317,7 +1304,7 @@ fieldset {
     border-image: initial;
 }
 
-fieldset{
+fieldset {
     border: 0;
 }
 
@@ -1513,6 +1500,190 @@ textarea.tn-textarea {
 
 
 
+ul.content-name-detail {
+    overflow: hidden;
+    margin-top: 2px;
+    display: -webkit-box;
+    word-break: break-word;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8b;
+    fill: #8a8a8b;
+    height: 60px;
+    width: 300px;
+}
+
+
+.content-name-detail {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.content-name-detail .detail {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.teacher-programs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+    width: 50%;
+    max-height: 90px;
+    /* 원하는 최대 높이 설정 */
+}
+
+.teacher-programs li {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    flex: 0 0 auto;
+    /* 크기 고정 */
+}
 
 
 
+
+
+.dynamic-input-container {
+    margin-bottom: 20px;
+}
+
+.dynamic-input-container h4 {
+    margin-bottom: 10px;
+}
+
+.dynamic-input-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dynamic-input-container li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.dynamic-input-container input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.add-btn,
+.remove-btn {
+    padding: 5px 10px;
+    background-color: #E7BCDE;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-btn {
+    background-color: #ff6b6b;
+}
+
+
+#teacherBackgroundList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#teacherBackgroundList li {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+#teacherBackgroundList input {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    min-width: 20px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#teacherBackgroundList .remove-btn {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
+
+#teacherBackgroundList,
+#teacherProgramList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#teacherBackgroundList li,
+#teacherProgramList li {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+#teacherBackgroundList input,
+#teacherProgramList input {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    min-width: 20px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#teacherBackgroundList .remove-btn,
+#teacherProgramList .remove-btn {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0 5px;
+}
