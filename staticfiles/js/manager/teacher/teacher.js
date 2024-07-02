@@ -109,14 +109,14 @@ checkboxes.forEach(function (checkbox) {
 
 // 강사등록버튼
 const addBtn = document.querySelector(".addBtn");
-const addModal = document.querySelector(".musclematrix-layer");
-const closeBtn = document.querySelector(".btn-close")
+const addModal = document.querySelector(".musclematrix-layer.teacher");
+const closeTeacherBtn = document.querySelector(".btn-close.teacher")
 
 addBtn.addEventListener('click', function () {
   addModal.style.display = "block"
 });
 
-closeBtn.addEventListener("click", function () {
+closeTeacherBtn.addEventListener("click", function () {
   addModal.style.display = "none"
 })
 
@@ -147,6 +147,45 @@ const editBtn = document.querySelector(".editBtn");
 editBtn.addEventListener('click', function () {
   addModal.style.display = "block"
 });
+
+
+
+// 기구등록
+const addMachineBtn = document.querySelector(".addMachineBtn");
+const addMachineModal = document.querySelector(".musclematrix-layer.machine");
+const closeMacineBtn = document.querySelector(".btn-close.machine")
+
+addMachineBtn.addEventListener('click', function () {
+  addMachineModal.style.display = "block"
+});
+
+closeMacineBtn.addEventListener("click", function () {
+  addMachineModal.style.display = "none"
+})
+
+// 강사 이미지 첨부란
+document.addEventListener('DOMContentLoaded', function () {
+  const machinePic = document.querySelector('.machine-pic');
+  const machineImageInput = document.getElementById('machineImageInput');
+  const machineImage = document.getElementById('machineImage');
+
+  machinePic.addEventListener('click', function () {
+    machineImageInput.click();
+  });
+
+  machineImageInput.addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        machineImage.src = e.target.result;
+      }
+      reader.readAsDataURL(file);
+    }
+  });
+});
+
+
 
 
 

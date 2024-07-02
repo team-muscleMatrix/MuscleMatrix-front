@@ -1719,9 +1719,191 @@ div.teacher-link {
     height: 40px;
     display: flex;
     border-color: #e6e6e7;
+    margin-right: 30px;
 }
 
 
+.machine-img {
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+}
+.machine-programs {
+    font-size: 16px;
+}
+
+.machine-programs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+    width: 50%;
+}
+
+.machine-programs li {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    /* flex-basis: calc(50% - 5px); */
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* width: auto; */
+    height: 40px;
+}
+div.machine-name {
+    position: relative;
+    padding: 2px 22px;
+    border: 1px solid #eee;
+    margin: -5px 0 30px;
+    background: #fff;
+    height: 10%;
+}
+.machine-pic {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 70px;
+    position: relative;
+    cursor: pointer;
+}
+
+.machine-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.machine-programs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+    width: 50%;
+    max-height: 90px;
+    /* 원하는 최대 높이 설정 */
+}
+.machine-programs li {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    flex: 0 0 auto;
+    /* 크기 고정 */
+}
+
+
+#machineBackgroundList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#machineBackgroundList li {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+#machineBackgroundList input {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    min-width: 20px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#machineBackgroundList .remove-btn {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
+
+#machineBackgroundList,
+#machineProgramList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#machineBackgroundList li,
+#machineProgramList li {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+#machineBackgroundList input,
+#machineProgramList input {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    min-width: 20px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#machineBackgroundList .remove-btn,
+#machineProgramList .remove-btn {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
+div.machine-link {
+    position: relative;
+    padding: 2px 22px;
+    border: 1px solid #eee;
+    margin: -5px 0 30px;
+    background: #fff;
+    height: 10%;
+}
+
+
+div.macine-name {
+    position: relative;
+    padding: 2px 22px;
+    border: 1px solid #eee;
+    margin: -5px 0 100px;
+    background: #fff;
+    height: 10%;
+}
 
 
 

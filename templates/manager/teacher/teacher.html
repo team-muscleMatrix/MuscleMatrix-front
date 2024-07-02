@@ -96,7 +96,7 @@
                     d="M10.5 10.2a3.502 3.502 0 0 1 0-7 3.5 3.5 0 1 1 0 7Zm1.9-3.5a1.9 1.9 0 1 1-3.8 0 1.9 1.9 0 0 1 3.8 0ZM13.945 13.147a.665.665 0 0 1 .306-.74l.833-.49a.665.665 0 0 1 .795.092l.46.437c.167.16.398.231.63.23a.892.892 0 0 0 .626-.24l.451-.445a.665.665 0 0 1 .794-.105l.84.476a.665.665 0 0 1 .32.735l-.15.616a.895.895 0 0 0 .116.66c.118.2.298.36.522.423l.61.168c.287.08.486.339.488.636l.008.965a.665.665 0 0 1-.477.644l-.608.179a.892.892 0 0 0-.513.43.898.898 0 0 0-.105.663l.159.614a.665.665 0 0 1-.307.74l-.832.49a.665.665 0 0 1-.795-.092l-.46-.437a.898.898 0 0 0-.63-.23.893.893 0 0 0-.626.24l-.452.445a.665.665 0 0 1-.794.105l-.84-.476a.665.665 0 0 1-.319-.735l.15-.617a.894.894 0 0 0-.117-.66.894.894 0 0 0-.52-.421l-.612-.17a.665.665 0 0 1-.488-.635l-.008-.965a.665.665 0 0 1 .477-.644l.608-.179a.892.892 0 0 0 .514-.43.898.898 0 0 0 .105-.663l-.159-.614Zm3.115 4.278a1.283 1.283 0 1 0 0-2.566 1.283 1.283 0 0 0 0 2.566Z">
                   </path>
                 </svg>
-                <span class="function-2">강사 추가</span>
+                <span class="function-2">통합 관리</span>
               </a>
             </li>
 
@@ -114,7 +114,7 @@
                     <div class="compose-button">
                       <!-- 기구  버튼 -->
                       <button class="button.add-button addMachineBtn">
-                        <img class="add-button" src="../../../staticfiles/images/write.png">
+                        <img class="add-button" src="../../../staticfiles/images/machine.png">
                       </button>
 
 
@@ -258,7 +258,7 @@
 
 
 
-    <div class="musclematrix-layer report-background" style="display: none;">
+    <div class="musclematrix-layer report-background teacher" style="display: none;">
       <div class="inner-musclematrix-layer inner-musclematrix-layer4">
         <form class="teacherForm">
           <input type="hidden" name="userId" value="">
@@ -301,27 +301,54 @@
                 <ul id="teacherProgramList"></ul>
                 <button type="button" id="addProgramBtn" class="add-btn">+</button>
               </div>
-
-              <!-- <div class="box-txtarea">
-                <textarea class="tf_reason" name="teacher-intro" id="fillReason" placeholder="강사 약력을 적어주세요."></textarea>
-              </div>
-
-              <div class="box-txtarea">
-                <textarea class="tf_reason" name="teacher-program" id="fillReason" placeholder="강사가 진행하는 프로그램을 적어주세요."></textarea>
-              </div> -->
-
-
               <div class="wrap-btn">
-                <button type="reset" class="btn-close">취소</button>
-                <button type="submit" class="btn-report">신고</button>
+                <button type="reset" class="btn-close teacher">취소</button>
+                <button type="submit" class="btn-report">등록</button>
               </div>
             </div>
           </fieldset>
 
         </form>
       </div>
-
     </div>
+
+
+
+
+    <div class="musclematrix-layer report-background machine" style="display: none;">
+      <div class="inner-musclematrix-layer inner-musclematrix-layer4">
+        <form class="machineForm">
+          <input type="hidden" name="userId" value="">
+          <input type="hidden" name="contentNo" value="">
+
+          <fieldset>
+            <legend class="ir-pm">기구 등록 폼</legend>
+
+            <div class="report-body">
+              <strong class="tit-report">기구 등록</strong>
+
+              <div class="machine-pic">
+                <!-- 서버에서  teacherImageInput값을 키로 업로드한 이미지를 받을 수 있음-->
+                <input type="file" name="machineImageInput" id="machineImageInput" accept="image/*"
+                  style="display: none;">
+                <img id="machineImage" src="../../../staticfiles/images/blank-image.png" alt="강사 이미지">
+              </div>
+
+              <div class="macine-name">
+                <textarea class="tn-textarea" name="machine-name" placeholder="기구 이름을 적어주세요."></textarea>
+              </div>
+
+              <div class="wrap-btn">
+                <button type="reset" class="btn-close machine">취소</button>
+                <button type="submit" class="btn-report">등록</button>
+              </div>
+            </div>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
+
 
 
   </div>
