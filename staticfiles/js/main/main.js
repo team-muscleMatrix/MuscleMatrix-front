@@ -1,13 +1,17 @@
-const abousContent = document.querySelector(".aboutus-content-divdivdiv");
-const frontContent = document.querySelector(".aboutus-content-figure");
-const backContent = document.querySelector(".back-div");
+const abousContents = document.querySelectorAll(".aboutus-content-divdivdiv");
+const frontContents = document.querySelectorAll(".aboutus-content-figure");
+const backContents = document.querySelectorAll(".back-div");
 
-abousContent.addEventListener("mouseover", () => {
-  frontContent.style.display = "none";
-  backContent.style.transform = "none";
+abousContents.forEach((abousContent, i) => {
+  abousContent.addEventListener("mouseover", () => {
+    frontContents[i].style.display = "hidden";
+    backContents[i].style.transform = "none";
+  });
 });
 
-abousContent.addEventListener("mouseout", () => {
-  frontContent.style.display = "block";
-  backContent.style.transform = "rotateY(180deg)";
+abousContents.forEach((abousContent, i) => {
+  abousContent.addEventListener("mouseout", () => {
+    frontContents[i].style.display = "block";
+    backContents[i].style.transform = "rotateY(180deg)";
+  });
 });
